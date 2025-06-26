@@ -7,8 +7,17 @@
   </head>
   <body>
     <div id="map" style="height: 100vh"></div>
+    <!-- Este div es el contenedor donde se renderizará el mapa de Google Maps.
+         El id "map" es importante porque se usa en el código TypeScript para seleccionar el elemento.
+         El estilo height: 100vh hace que el mapa ocupe toda la altura de la ventana. -->
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXwRNFksnxRXxiGVTLeQGaWOyJ7qJzH8M&callback=Function.prototype"></script>
+    <!-- Carga la librería de Google Maps JavaScript API.
+         Es necesaria para poder usar el objeto google.maps en la aplicación TypeScript. -->
+
     <script type="module" src="./src/index.ts"></script>
+    <!-- Importa el archivo principal de TypeScript como un módulo.
+         Esto permite usar la sintaxis de import/export y organizar el código en módulos.
+         Nota: En un entorno real, normalmente se compila TypeScript a JavaScript antes de cargarlo en el navegador. -->
   </body>
 </html>
